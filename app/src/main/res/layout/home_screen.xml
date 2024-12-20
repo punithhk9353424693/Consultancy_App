@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <!-- Toolbar -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolobar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- ImageButton beside Toolbar (Uncomment if needed) -->
+    <!-- <ImageButton
+        android:id="@+id/renderToAnother"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Add Button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/toolbar"
+        android:background="@null" /> -->
+
+    <!-- SearchView positioned below Toolbar -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_search_background"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search here" />
+
+    <!-- RecyclerView positioned below SearchView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchView"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

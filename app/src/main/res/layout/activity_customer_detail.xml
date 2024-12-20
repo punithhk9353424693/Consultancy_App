@@ -1,0 +1,70 @@
+<!-- activity_customer_detail.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginLeft="1dp"-->
+<!--        android:background="@color/black">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/logo"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/logomaruthi" />-->
+
+<!--        &lt;!&ndash; TextView for the title &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:fontFamily="serif"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="Maruthi Consultancy"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/nameTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Name" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/phoneTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Phone" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/areaTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Area" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/categoryTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Category" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/remarksTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Remarks" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/dateTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Date" />-->
+</LinearLayout>

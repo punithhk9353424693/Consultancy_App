@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".presentation.AllCostumers">
+
+    <!-- A Box/Container for each customer -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="17dp">
+
+        <!-- Customer Details inside the CardView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/datetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+              android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/nametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/phontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Phone Number"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-black"/>
+
+
+            <TextView
+                android:id="@+id/areatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Area"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"/>
+
+            <TextView
+                android:id="@+id/categorytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Category"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"/>
+
+            <TextView
+                android:id="@+id/remarkstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Remarks"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add more CardView blocks for additional customers here -->
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:orientation="horizontal"
+    android:padding="0dp"
+    android:gravity="center_vertical"
+    android:layout_alignParentTop="true">
+
+    <!-- ImageView for the logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logomaruthi"
+        android:layout_marginStart="16dp" /> <!-- Add margin to avoid touch edges -->
+
+    <!-- TextView for the title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Maruthi Consultancy"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginEnd="30dp" /> <!-- Space to the right for ImageButton -->
+
+    <!-- ImageButton -->
+    <ImageButton
+        android:id="@+id/renderToAnother"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end|center_vertical"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Add Button"
+        android:background="@null"
+        android:tint="@android:color/white"
+        android:layout_marginEnd="16dp" /> <!-- Add margin from the right edge -->
+</androidx.appcompat.widget.Toolbar>
