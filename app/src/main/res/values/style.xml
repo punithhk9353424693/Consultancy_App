@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Custom SearchView style -->
+        <style name="CustomSearchViewStyle">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_marginEnd">16dp</item> <!-- Add some margin to make space on the end -->
+        </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:textColorPrimary">@color/text_light</item>
+        <item name="colorPrimary">@color/button_light</item>
+        <item name="colorAccent">@color/button_light</item>
+    </style>
+
+    <!-- Dark Mode Theme -->
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:textColorPrimary">@color/text_dark</item>
+        <item name="colorPrimary">@color/button_dark</item>
+        <item name="colorAccent">@color/button_dark</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#03DAC5</item>
+    </style>
+</resources>

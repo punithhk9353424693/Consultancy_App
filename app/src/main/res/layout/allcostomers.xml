@@ -2,95 +2,364 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearhome"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#f0f0f0"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".presentation.AllCostumers">
+    android:padding="16dp">
 
     <!-- A Box/Container for each customer -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:layout_marginBottom="10dp"
-        android:padding="10dp"
-        app:cardCornerRadius="19dp"
-        app:cardElevation="17dp">
+        android:layout_height="340dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+  >
 
         <!-- Customer Details inside the CardView -->
         <LinearLayout
+            android:id="@+id/LinearlayoutColor"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
 
-            <TextView
-                android:id="@+id/datetext"
-                android:layout_width="wrap_content"
+            <!-- Date Text -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:id="@+id/datetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Date"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="260dp"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/grey" />
+
+            <!-- Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Date"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif-black"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="8dp"
-              android:layout_marginLeft="20dp" />
+                android:layout_marginBottom="5dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/nametext"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Name           :"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nametext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Name"
+
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Phone Number -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="Name"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:fontFamily="sans-serif-black"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginBottom="5dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/phontext"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Ph_No          :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/phontext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Phone Number"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Location -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="8dp"
-                android:text="Phone Number"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif-black"/>
+                android:layout_marginBottom="5dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Location      :"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/areatext"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/areatext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Area"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Property Type -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Area"
-                android:textSize="14sp"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="sans-serif-black"/>
+                android:layout_marginBottom="5dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/categorytext"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Property      :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/PropertypeEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="PropertyType"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Category -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Category"
-                android:textSize="14sp"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="sans-serif-black"/>
+                android:layout_marginBottom="5dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/remarkstext"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Category     :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/categorytext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Category"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Looking For -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Remarks"
-                android:textSize="14sp"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="sans-serif-black"/>
+                android:layout_marginBottom="5dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Looking For :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lookinforTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Looking For"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Amount Range -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Amt Range  :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rangeTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Range"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Facing -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Facing          :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/facingTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Facing Text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Remarks -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Remarks      :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/remarkstext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Remarks"
+                    android:textSize="14sp" />
+            </LinearLayout>
         </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="300dp"
+            android:backgroundTint="@color/grey"
+            app:cardCornerRadius="10dp">
+
+            <!-- LinearLayout for arranging the buttons horizontally -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="16dp">
+
+                <!-- Delete Button aligned to the left -->
+                <ImageButton
+                    android:id="@+id/deleteImagebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:backgroundTint="@color/grey"
+                    android:src="@drawable/ic_deleting" />
+            </LinearLayout>
+            <!-- Right aligned buttons (phone call, message, favorite, edit) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Phone Call Button -->
+                <ImageButton
+                    android:id="@+id/phonecall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:src="@drawable/ic_phonecall" />
+
+                <!-- Message Button -->
+                <ImageButton
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:src="@drawable/ic_message" />
+
+                <!-- Favorite Button -->
+                <ImageButton
+                    android:id="@+id/faverateImagebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:src="@drawable/ic_favoriteonly" />
+
+                <!-- Edit Button -->
+                <ImageButton
+                    android:id="@+id/editBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:src="@drawable/ic_edit" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
     </androidx.cardview.widget.CardView>
 
-    <!-- Add more CardView blocks for additional customers here -->
 
 </LinearLayout>

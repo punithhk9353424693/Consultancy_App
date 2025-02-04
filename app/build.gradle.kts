@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.compose.compiler)
+    id ("kotlin-parcelize")
 }
 
 android {
@@ -31,6 +32,9 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+    dataBinding{
+        enable=true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -73,6 +77,18 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation("org.jetbrains.kotlin:kotlin-parcelize-runtime:1.7.0")  // Make sure you use the correct version
+    implementation("com.itextpdf:itext7-core:7.2.3")
+    implementation("org.apache.poi:poi-ooxml:5.2.3")
+    implementation("org.apache.poi:poi:5.2.3")
+    implementation("com.google.android.material:material:1.8.0")
+    implementation("androidx.work:work-runtime:2.7.1")
+    implementation ("androidx.work:work-runtime-ktx:2.8.1")
+    implementation ("androidx.work:work-runtime-ktx:2.8.1")
+    implementation ("androidx.hilt:hilt-work:1.0.0" )
+    implementation("com.google.code.gson:gson:2.10.1")
+
+
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)

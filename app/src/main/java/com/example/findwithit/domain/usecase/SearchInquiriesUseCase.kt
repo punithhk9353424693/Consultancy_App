@@ -6,5 +6,7 @@ import com.example.findwithit.data.repository.InquiryRepository
 import kotlinx.coroutines.flow.Flow
 
 class SearchInquiriesUseCase(private val repository: InquiryRepository) {
-    fun invoke(query: String): Flow<List<CustomerInquiry>> = repository.searchInquiries(query)
+    operator fun invoke(query: String): Flow<List<CustomerInquiry>> {
+       return repository.searchInquiries(query)
+    }
 }

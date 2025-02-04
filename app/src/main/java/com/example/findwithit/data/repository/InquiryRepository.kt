@@ -9,4 +9,9 @@ interface InquiryRepository {
     fun getInquiries(): Flow<List<CustomerInquiry>>
     fun searchInquiries(query: String): Flow<List<CustomerInquiry>>
     suspend fun deleteInquiry(id: Int)
+    suspend fun updateInquery(inquery: CustomerInquiry)
+    suspend fun addAllInqueries(customerInquiry: List<CustomerInquiry>)
+    suspend fun getFavoriteCustomers(): List<CustomerInquiry>
+
+
 }

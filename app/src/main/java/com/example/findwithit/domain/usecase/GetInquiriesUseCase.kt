@@ -7,4 +7,6 @@ import kotlinx.coroutines.flow.Flow
 
 class GetInquiriesUseCase(private val repository: InquiryRepository) {
     fun invoke(): Flow<List<CustomerInquiry>> = repository.getInquiries()
+    //public Flow<List<Costumer>> invoke(Reposoitory:repo){
+    //return repo.getinurie()
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="titleText" type="id" />
+    <item name="stateInputLayout" type="id" />
+    <item name="stateEditText" type="id" />
+    <item name="regNoInputLayout" type="id" />
+    <item name="regNoEditText" type="id" />
+    <item name="regDateInputLayout" type="id" />
+    <item name="submitButton" type="id" />
+    <item name="vehicleModelInputLayout" type="id" />
+    <item name="vehicleModelEditText" type="id" />
+    <item name="vehicleMakeInputLayout" type="id" />
+    <item name="vehicleMakeEditText" type="id" />
+    <item name="chasNoInputLayout" type="id" />
+    <item name="chasNoEditText" type="id" />
+    <item name="enginNoEditText" type="id" />
+    <item name="enginNoInputLayout" type="id" />
+    <item name="addressInputLayout" type="id" />
+    <item name="addressEditText" type="id" />
+    <item name="ownerNameInputLayout" type="id" />
+    <item name="ownerNameEditText" type="id" />
+    <item name="regDateEditText" type="id" />
+    <item name="etSaleAmount" type="id" />
+    <item name="etFuel" type="id" />
+    <item name="etVehicleClass" type="id" />
+    <item name="etVehicleModel" type="id" />
+    <item name="etVehicleMake" type="id" />
+    <item name="etChassisNo" type="id" />
+    <item name="etEngineNo" type="id" />
+    <item name="etAddress" type="id" />
+    <item name="etRegDate" type="id" />
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/maru"
+        android:title="MaruthiConsultancy"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/add_costumer"
+        android:title="Add_Costumer"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_addpersons"/>
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="search"
+        android:icon="@drawable/ic_searching"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+
+        />
+    <item
+        android:id="@+id/exportData"
+        android:title="Export"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/importdata"
+        android:title="Import"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/addInsurance"
+        android:title="AddInsurance"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/insuranceList"
+        android:title="view_Insurance_List"
+        app:showAsAction="never"
+        />
+    <item
+    android:id="@+id/faverates"
+    android:title="Favorite"
+    app:showAsAction="never" />
+</menu>

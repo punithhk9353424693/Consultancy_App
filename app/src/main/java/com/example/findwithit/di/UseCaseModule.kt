@@ -3,8 +3,10 @@ package com.example.findwithit.di
 
 import com.example.findwithit.data.repository.InquiryRepository
 import com.example.findwithit.domain.usecase.AddInquiryUseCase
+import com.example.findwithit.domain.usecase.GetAllInsurances
 import com.example.findwithit.domain.usecase.GetInquiriesUseCase
 import com.example.findwithit.domain.usecase.SearchInquiriesUseCase
+import com.example.findwithit.insurance.repository.InsurancePersonImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,4 +29,9 @@ object UseCaseModule {
     fun provideSearchInquiriesUseCase(repository: InquiryRepository): SearchInquiriesUseCase {
         return SearchInquiriesUseCase(repository)
     }
+    @Provides
+    fun provideGetAllInsurances(repository: InsurancePersonImpl): GetAllInsurances{
+        return GetAllInsurances(repository)
+    }
+
 }

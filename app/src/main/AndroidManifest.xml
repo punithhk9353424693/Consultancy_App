@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
     <application
         android:name=".MarutiConsultancyApp"
         android:allowBackup="true"
@@ -30,11 +33,15 @@
         </activity>
         <activity
             android:name=".presentation.home.view.HomeActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".presentation.home.view.AddPersonActivity" />
-        <activity
-            android:name=".presentation.AllCostumers"
-            android:theme="@style/Theme.AppCompat.Light" />
+        <activity android:name=".presentation.home.view.FaverateActivity" />
+        <activity android:name=".presentation.home.view.UserLogin" />
+        <activity android:name=".presentation.insurancepresnt.AddInsuranceActivity"/>
+        <activity android:name=".presentation.insurancepresnt.InsuranceHomeActivity"/>
+        <activity android:name=".presentation.insurancepresnt.InsuranceDetailsActivity"/>
+        <activity android:name=".presentation.insurancepresnt.UpdateInsuranceActivity"/>
     </application>
 
 </manifest>

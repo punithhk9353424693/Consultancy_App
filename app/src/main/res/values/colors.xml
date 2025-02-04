@@ -7,4 +7,24 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#10C322</color>
+    <color name="yellow">#DBCD8B</color>
+    <color name="red">#AF2251</color>
+    <color name="grey">#A29E9E</color>
+    <color name="littleBlack">#545252</color>
+
+    <color name="background_light">#FFFFFF</color>
+    <color name="text_light">#000000</color>
+    <color name="button_light">#6200EE</color>
+
+    <!-- Dark Mode Colors -->
+    <color name="background_dark">#121212</color>
+    <color name="text_dark">#FFFFFF</color>
+    <color name="button_dark">#03DAC6</color>
+
+    <color name="primaryColor">#6200EE</color>
+    <color name="maroon">#76BAA773</color>
+
+
+
 </resources>
