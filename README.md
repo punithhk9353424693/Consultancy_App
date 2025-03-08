@@ -14,7 +14,7 @@
 Here are the tools and technologies I work with:
 
 - ![Kotlin](https://img.shields.io/badge/Kotlin-Android-blue?logo=kotlin)
-- ![XML Layouts](https://img.shields.io/badge/Jetpack%20Compose-UI-blue?logo=android)
+- ![XML Layouts](https://img.shields.io/badge/Xml_Layout%20-UI-blue?logo=android)
 - ![Room Database](https://img.shields.io/badge/Room-Database-green?logo=sqlite)
 - ![Hilt](https://img.shields.io/badge/Hilt-DI-yellow?logo=dagger)
 
